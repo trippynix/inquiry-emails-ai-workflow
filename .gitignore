@@ -1,0 +1,27 @@
+# --- Python ---
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.log
+*.tmp
+
+# --- Virtual Environment ---
+venv/
+env/
+.venv/
+
+# --- IDE / Editor ---
+.vscode/
+.idea/
+
+# Ignore all text files (email samples etc.)
+!samples/inbox/*txt
+
+# But explicitly include JSON outputs in data/ folder
+data/**/*.json
+data/**/*.jsonl
+!config/*.json
+
+# environment variables
+.env

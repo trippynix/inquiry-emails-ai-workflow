@@ -1,0 +1,11 @@
+{
+  "provider": "gemini",
+  "ollama_settings": {
+    "base_url": "http://localhost:11434/api/generate",
+    "model": "llama3:8b",
+    "timeout_seconds": 120
+  },
+  "gemini_settings": {
+    "model": "gemini-2.5-flash"
+  }
+}

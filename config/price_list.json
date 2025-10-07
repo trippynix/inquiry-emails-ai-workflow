@@ -1,0 +1,22 @@
+{
+  "Lenovo ThinkPad E14": { "price": 60000, "category": "Laptop" },
+  "Lenovo ThinkPad L14": { "price": 58000, "category": "Laptop" },
+  "HP EliteBook 840": { "price": 65000, "category": "Laptop" },
+  "Dell Latitude 5420": { "price": 62000, "category": "Laptop" },
+  "Wireless Mouse": { "price": 800, "category": "Accessory" },
+  "Mechanical Keyboard": { "price": 3500, "category": "Accessory" },
+  "27-inch Monitor": { "price": 15000, "category": "Monitor" },
+  "24-inch Monitor": { "price": 12000, "category": "Monitor" },
+  "USB-C Docking Station": { "price": 7000, "category": "Accessory" },
+  "HDMI Cable": { "price": 400, "category": "Accessory" },
+  "Ethernet Cable": { "price": 300, "category": "Accessory" },
+  "External Hard Drive 1TB": { "price": 4500, "category": "Storage" },
+  "SSD 512GB": { "price": 5500, "category": "Storage" },
+  "Webcam Full HD": { "price": 2500, "category": "Accessory" },
+  "Headset with Mic": { "price": 1800, "category": "Accessory" },
+  "Printer Ink Cartridge": { "price": 900, "category": "Printing" },
+  "Laser Printer": { "price": 18000, "category": "Printing" },
+  "Projector": { "price": 32000, "category": "Monitor" },
+  "Server Rack 42U": { "price": 85000, "category": "Infrastructure" },
+  "Wi-Fi Router": { "price": 2500, "category": "Accessory" }
+}

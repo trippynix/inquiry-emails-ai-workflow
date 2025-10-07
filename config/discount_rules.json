@@ -1,0 +1,14 @@
+{
+  "tax_rate_percent": 18.0,
+  "bulk_discount": [
+    { "min_quantity": 5, "discount_percent": 5 },
+    { "min_quantity": 10, "discount_percent": 10 },
+    { "min_quantity": 20, "discount_percent": 15 }
+  ],
+  "category_discount": {
+    "Laptop": 3,
+    "Monitor": 2,
+    "Accessory": 5,
+    "Printing": 1
+  }
+}

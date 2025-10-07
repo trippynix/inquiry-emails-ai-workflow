@@ -1,0 +1,7 @@
+# For LLM interaction
+google-generativeai
+requests
+
+# For fuzzy matching of product names
+thefuzz
+python-Levenshtein

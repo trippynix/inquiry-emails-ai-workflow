@@ -31,6 +31,30 @@ The project provides two distinct pipelines for processing:
   ```bash
   git clone https://github.com/trippynix/inquiry-emails-ai-workflow
   cd inquiry-emails-ai-workflow
+  ```
+
+- Create and activate a virtual environment:
+
+  Using a virtual environment is highly recommended to manage project dependencies.
+
+  - On macOS/Linux:
+
+    ```bash
+    python3 -m venv venv
+    source venv/bin/activate
+    ```
+
+  - On Windows:
+
+    ```bash
+    python -m venv venv
+    .\venv\Scripts\activate
+    ```
+
+- Install dependencies:
+  Once the virtual environment is activated, install the required packages.
+
+  ```bash
   pip install -r requirements.txt
   ```
 

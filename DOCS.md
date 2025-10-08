@@ -1,4 +1,4 @@
-# Project Documentation: AI Email Inquiry Processing Workflow
+# Project Documentation: AI Workflow: Structured Extraction
 
 **Date**: October 7, 2025
 

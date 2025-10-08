@@ -5,7 +5,6 @@ from thefuzz import process as fuzzy_process
 
 from src.utils.email_parser_helpers import (
     clean_email_body,
-    generate_email_id,
     parse_quantity,
 )
 
@@ -192,11 +191,11 @@ class EmailParser:
             )
         return items, gaps
 
-    def parse_email(self, email_content: str) -> Dict[str, Any]:
+    def parse_email(self, email_content: str, email_id: str) -> Dict[str, Any]:
         """
         Orchestrates the parsing of a single email's content.
+        The email_id is now passed in from the pipeline to ensure consistency.
         """
-        email_id = generate_email_id(email_content)
         sender = self.parse_sender(email_content)
         subject = self.parse_subject(email_content)
 

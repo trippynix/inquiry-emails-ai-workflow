@@ -3,7 +3,7 @@ import os
 from pathlib import Path
 
 # Import our custom modules from the 'src' directory
-from src.lightweight_offline.email_parser import EmailParser, generate_email_id
+from src.lightweight_offline.email_parser import EmailParser
 from src.logging import log_activity
 from src.lightweight_offline.acknowledgment import AcknowledgmentGenerator
 from src.quoting import QuoteGenerator
@@ -74,12 +74,8 @@ def main():
         log_file, "EMAIL_PROCESSING_START", "INFO", "Starting email parsing stage."
     )
     for email_file in inbox_dir.glob("*.txt"):
-        # print("ASDASDASDASD", os.path.basename(email_file).split(".")[0])
+        email_id = email_file.stem  # Use the filename as the ID
         try:
-            with open(email_file, "r", encoding="utf-8") as f:
-                content = f.read()
-
-            email_id = generate_email_id(content)
             output_file = events_dir / f"{email_id}.json"
 
             if output_file.exists():
@@ -92,7 +88,11 @@ def main():
                 )
                 continue
 
-            parsed_data = parser.parse_email(content)
+            with open(email_file, "r", encoding="utf-8") as f:
+                content = f.read()
+
+            # Pass the email_id to the parser instead of having it generate a hash
+            parsed_data = parser.parse_email(content, email_id)
 
             with open(output_file, "w", encoding="utf-8") as f:
                 json.dump(parsed_data, f, indent=2)

@@ -4,11 +4,6 @@ import re
 from typing import Optional
 
 
-def generate_email_id(content: str) -> str:
-    """Creates a stable SHA-256 hash of the email content to use as a unique ID."""
-    return hashlib.sha256(content.encode("utf-8")).hexdigest()
-
-
 def clean_email_body(text: str) -> str:
     """
     Removes common noise and isolates the core message between a salutation and sign-off.

@@ -1,6 +1,7 @@
 # For LLM interaction
 google-generativeai
 requests
+dotenv
 
 # For fuzzy matching of product names
 thefuzz

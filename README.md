@@ -1,4 +1,4 @@
-## AI Workflow: Strucutured Extraction
+## AI Workflow: Structured Extraction
 
 This project implements a deterministic AI workflow that ingests inquiry emails, extracts structured data, drafts an acknowledgment, and generates a price quote as a JSON artifact. The system is designed to operate offline, persist artifacts to the filesystem, and handle varied email structures gracefully.
 
